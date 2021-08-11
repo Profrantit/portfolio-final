@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap");
+body {
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.git {
+  margin-right: 20px;
+}
+
+.text {
+  text-align: center !important;
+}
+.testing1 {
+  background-color: #92a8d1;
+}
+p {
+  color: "white";
+  alignitems: "center";
+  justifycontent: "center";
+}
+li {
+  list-style-type: none;
+}
+ul {
+  list-style-type: none;
+  alignitems: "center";
+  text-align: center !important;
+  justifycontent: "center";
+}
+
+.hello {
+  padding-top: 100px;
+  z-index: -1;
+  max-width: 100%;
+  height: auto;
+}
+.above {
+  margin-top: -5px;
+  z-index: 1;
+}
+.offers {
+  border-left: 1px solid black;
+}
+.icons {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+}
+.avatar {
+  vertical-align: middle;
+  margin-top: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.footer {
+  background-color: #6c63ff;
+  height: 200px;
+}
+a {
+  text-decoration: none;
+}
+
+.test {
+  border: 1px solid black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.img__description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: large;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.content {
+  box-sizing: border-box;
+  background: #077b8a;
+  color: #485e74;
+  line-height: 1.6;
+  font-family: "roboto";
+  padding: 1em;
+}
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+.unOrder {
+  padding: 0;
+}
+.brand {
+  text-align: center;
+}
+.brand span {
+  color: white;
+}
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+.wrapper > * {
+  padding: 1em;
+}
+.company-info {
+  background: #a2d5c6;
+}
+.company-info h3,
+.company-info li,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+.contact {
+  background: #f9feff;
+}
+
+/* form styles */
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.contact form label {
+  display: block;
+  text-transform: uppercase;
+}
+.contact form p {
+  margin: 0;
+  text-transform: uppercase;
+}
+.contact form .full {
+  grid-column: 1 / 3;
+}
+.contact form button,
+.contact form input,
+.contact form textarea {
+  border: 1px solid #c9e6ff;
+  width: 90%;
+  padding: 1em;
+}
+.contact form button {
+  background: #077b8a;
+  border: 0;
+  text-transform: uppercase;
+}
+.boxAnimate:hover {
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
+}
+.contact form button:hover,
+.contact form button:focus {
+  background: #92bde7;
+  color: white;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
+  .company-info h3,
+  .company-info ul,
+  .company-info li,
+  .brand {
+    text-align: left;
+  }
+}
