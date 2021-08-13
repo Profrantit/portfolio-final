@@ -7,21 +7,15 @@ import AboutPage from "./pages/AboutPage";
 import ThirdPage from "./pages/ThirdPage";
 import EmptyPage from "./pages/EmptyPage";
 import ContactPage from "./pages/ContactPage";
-import Navigation from "./components/Navigation";
-import TravMedia from "./components/TravMedia";
+
 import { makeStyles } from "@material-ui/core/styles";
 
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
+
 import AppBar from "@material-ui/core/AppBar";
-import Market from "./components/Market";
-import HeroTest from "./components/HeroTest";
-import Fixed from "./components/Fixed";
-import Next from "./pages/Next";
-import { borderBottom } from "@material-ui/system";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -42,7 +36,7 @@ const useStyles = makeStyles(theme => ({
 }));
 export default function App() {
   const classes = useStyles();
-  const preventDefault = event => event.preventDefault();
+
   return (
     <Router>
       <div>
@@ -64,7 +58,7 @@ export default function App() {
               aria-label="menu"
             ></IconButton>
             <Typography className={classes.root}>
-              <Link to="/EmptyPage">
+              <Link to="/contactPage">
                 <Button
                   variant="text"
                   size="medium"
@@ -97,7 +91,7 @@ export default function App() {
           <Route path="/thirdPage">
             <ThirdPage />
           </Route>
-          <Route path="/emptyPage">
+          <Route path="/contactPage">
             <EmptyPage />
           </Route>
           <Route path="/">

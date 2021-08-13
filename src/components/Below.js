@@ -7,11 +7,7 @@ import { Card, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
-import james from "../images/james.jpg";
+
 import uxMobile from "../images/ux-mobile.jpg";
 import GithubFiles from "../images/gihubFiles.jpg";
 import Gang from "../images/fitgang.png";
@@ -58,12 +54,14 @@ export default function Below() {
                   <div className="img__wrap">
                     {" "}
                     <img
+                      alt="ganfit-site"
                       class="img__img"
                       style={{ height: "auto", width: "100%" }}
                       src={Gang}
                     />
                     <p className="img__description">
                       <a
+                        alt="next-app"
                         style={{ textDecoration: "none", color: "white" }}
                         href="https://fit-gang.vercel.app/"
                       >
@@ -81,6 +79,7 @@ export default function Below() {
                 <CardActionArea>
                   <div className="img__wrap">
                     <img
+                      alt="files"
                       className="img_img"
                       style={{ height: "auto", width: "100%" }}
                       src={GithubFiles}
@@ -88,6 +87,7 @@ export default function Below() {
                     <p className="img__description">
                       {" "}
                       <a
+                        alt="github"
                         style={{ textDecoration: "none", color: "white" }}
                         href="https://github.com/Profrantit/Fitter"
                       >
@@ -105,6 +105,7 @@ export default function Below() {
                 <CardActionArea>
                   <div className="img__wrap">
                     <img
+                      alt="ux"
                       className="img_img"
                       style={{ height: "auto", width: "100%" }}
                       src={uxMobile}

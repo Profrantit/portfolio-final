@@ -3,7 +3,6 @@ import { Grid } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import Git from "../images/Git.png";
 import { ThemeProvider } from "@material-ui/styles";
-import { createMuiTheme } from "@material-ui/core/styles";
 
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -37,11 +36,12 @@ export default function Buttons() {
 
             <ThemeProvider>
               <Button
+                className="animate__animated animate__bounce animate__delay-2s"
                 border="red"
                 size="large"
                 variant="outlined"
                 color="primary"
-                href="https://github.com/logos"
+                href="https://github.com/Profrantit?tab=repositories"
               >
                 <span>
                   <img alt="git" src={Git} className="git" />

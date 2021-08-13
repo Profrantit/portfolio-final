@@ -1,10 +1,8 @@
 import React from "react";
-import CssBaseline from "@material-ui/core/CssBaseline";
+
 import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
-import Code from "./Code";
+
 import { Grid } from "@material-ui/core";
-import HeroTest from "./HeroTest";
 
 export default function Fixed() {
   return (

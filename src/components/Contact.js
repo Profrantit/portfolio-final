@@ -1,7 +1,7 @@
 import React from "react";
-import { Grid, Typography } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
-import Git from "../images/Git.png";
+
 import { ThemeProvider } from "@material-ui/styles";
 import { createMuiTheme } from "@material-ui/core/styles";
 
@@ -43,6 +43,7 @@ export default function Contact() {
 
             <ThemeProvider theme={theme}>
               <Button
+                className="animate__animated animate__pulse"
                 border="red"
                 size="large"
                 variant="outlined"

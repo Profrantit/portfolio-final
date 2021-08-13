@@ -9,7 +9,7 @@ import { Grid } from "@material-ui/core";
 import design from "../images/sketch.png";
 import code from "../images/frontEnd.png";
 import sales from "../images/sales.png";
-import { fontWeight } from "@material-ui/system";
+
 const useStyles = makeStyles({
   root: {
     marginTop: "-120px",
@@ -32,7 +32,6 @@ const useStyles = makeStyles({
 
 export default function HeroTest() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <>
